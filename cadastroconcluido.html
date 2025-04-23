@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cadastro Concluído - WorkPro</title>
+  <style>
+    :root {
+      --laranja: #f57c00;
+      --laranja-claro: #fff3e0;
+      --preto: #212121;
+      --branco: #ffffff;
+    }
+
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: var(--laranja-claro);
+      color: var(--preto);
+      display: flex;
+      flex-direction: column;
+      min-height: 100vh;
+    }
+
+    header {
+      background-color: var(--laranja);
+      padding: 1.5rem;
+      text-align: center;
+      color: var(--branco);
+    }
+
+    main {
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      padding: 2rem;
+      text-align: center;
+    }
+
+    main h2 {
+      color: var(--laranja);
+    }
+
+    img {
+      max-width: 300px;
+      margin-top: 1rem;
+      border-radius: 10px;
+    }
+
+    .botao {
+      margin-top: 2rem;
+      background-color: var(--laranja);
+      color: var(--branco);
+      border: none;
+      padding: 0.75rem 1.5rem;
+      border-radius: 8px;
+      font-size: 1rem;
+      font-weight: bold;
+      text-decoration: none;
+      cursor: pointer;
+      transition: background-color 0.3s;
+    }
+
+    .botao:hover {
+      background-color: #ef6c00;
+    }
+
+    footer {
+      background-color: var(--preto);
+      color: var(--branco);
+      text-align: center;
+      padding: 1rem;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Cadastro Concluído</h1>
+  </header>
+
+  <main>
+    <h2>Parabéns! Seu cadastro foi realizado com sucesso!</h2>
+    <p>Agora você já pode acessar todos os serviços disponíveis na plataforma WorkPro.</p>
+    <img src="https://via.placeholder.com/300x200.png?text=Sucesso!+%F0%9F%8E%89" alt="Imagem comemorativa">
+    <a href="index.html" class="botao">Voltar para a Home</a>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 WorkPro - Todos os direitos reservados.</p>
+  </footer>
+</body>
+</html>

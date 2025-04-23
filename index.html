@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>WorkPro - Home Page</title>
+  <style>
+    :root {
+      --laranja: #f57c00;
+      --laranja-claro: #ffe0b2;
+      --cinza-claro: #f5f5f5;
+      --branco: #ffffff;
+      --preto: #212121;
+    }
+
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: var(--cinza-claro);
+      margin: 0;
+      padding: 0;
+      color: var(--preto);
+    }
+
+    header {
+      background-color: var(--laranja);
+      color: var(--branco);
+      padding: 1rem 2rem;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      flex-wrap: wrap;
+    }
+
+    header img {
+      height: 60px;
+      border-radius: 1rem;
+    }
+
+    header h1 {
+      flex: 1;
+      text-align: center;
+      font-size: 1.5rem;
+      margin: 0;
+    }
+
+    nav a {
+      margin: 0 1rem;
+      color: var(--branco);
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    main {
+      padding: 2rem;
+    }
+
+    section {
+      margin-bottom: 2rem;
+    }
+
+    .hero {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      background-color: var(--laranja-claro);
+      padding: 2rem;
+      border-radius: 12px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    }
+
+    .hero-text {
+      max-width: 600px;
+    }
+
+    .hero-text h2 {
+      font-size: 2rem;
+      color: var(--laranja);
+    }
+
+    .hero-text p {
+      font-size: 1.1rem;
+      margin-bottom: 1rem;
+    }
+
+    .hero-text button {
+      background-color: var(--laranja);
+      color: var(--branco);
+      padding: 0.75rem 1.5rem;
+      border: none;
+      border-radius: 8px;
+      font-size: 1rem;
+      cursor: pointer;
+      transition: background-color 0.3s;
+    }
+
+    .hero-text button:hover {
+      background-color: #ef6c00;
+    }
+
+    .hero img {
+      max-width: 400px;
+      width: 100%;
+      border-radius: 10px;
+    }
+
+    .features {
+      display: flex;
+      gap: 2rem;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+
+    .feature {
+      flex: 1 1 250px;
+      background-color: var(--branco);
+      padding: 1rem;
+      border-radius: 10px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+      text-align: center;
+    }
+
+    .feature img {
+      max-width: 100px;
+      margin-bottom: 0.5rem;
+    }
+
+    .feature h3 {
+      color: var(--laranja);
+      margin: 0.5rem 0;
+    }
+
+    footer {
+      background-color: var(--preto);
+      color: var(--branco);
+      text-align: center;
+      padding: 1rem;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <img src="logo.png" alt="WorkPro Logo">
+    <h1>WorkPro - Plataforma de Serviços Gerais</h1>
+    <nav>
+      <a href="index.html">Plataforma</a>
+      <a href="avaliacoes.html">Avaliações</a>
+      <a href="cadastro.html">Cadastre-se</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="hero-text">
+        <h2>Conectando você aos melhores profissionais</h2>
+        <p>Encontre prestadores de confiança para serviços gerais, desde eletricistas até encanadores e muito mais.</p>
+        <a href="index.html"><button>Comece Agora</button></a>
+      </div>
+      <img src="gerais.jpg" alt="Imagem de serviços gerais">
+    </section>
+
+    <section id="sobre">
+      <h2>Sobre a Plataforma</h2>
+      <p>Nosso objetivo é facilitar a conexão entre clientes e prestadores de serviços qualificados, promovendo confiança, agilidade e qualidade no atendimento.</p>
+    </section>
+
+    <section id="servicos">
+      <h2>Principais Serviços</h2>
+      <div class="features">
+        <div class="feature">
+          <img src="elet.jpg" alt="Eletricista">
+          <h3>Eletricistas</h3>
+          <p>Profissionais experientes para instalações e manutenções.</p>
+        </div>
+        <div class="feature">
+          <img src="enca.jpg" alt="Encanador">
+          <h3>Encanadores</h3>
+          <p>Serviços hidráulicos rápidos e eficientes.</p>
+        </div>
+        <div class="feature">
+          <img src="pintor.jpg" alt="Pintor">
+          <h3>Pintores</h3>
+          <p>Transforme seu ambiente com profissionais qualificados.</p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 WorkPro - Todos os direitos reservados.</p>
+  </footer>
+</body>
+</html>
